@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/* Viewport */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ul.arriba {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: rgba(97, 6, 6, 0.658);
+}
+ul.arriba li{
+    display: inline;
+    font-size: 18px;
+}
+ul.arriba li+li:before{
+    padding: 8px;
+    color: white;
+    content: "/\00a0";
+}
+ul.arriba li a {
+    color: white;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    z-index: 10;
+   
+}
+header .logo img{
+    position: relative;
+    right: -80px;
+    width: 100px;
+    height: 100px;
+    animation: latidos 4s infinite;
+}
+header #toggle{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+header > #toggle::before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+header > #toggle::after{
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+.banner.active header #toggle::before{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.banner.active header #toggle::after{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url(content/image/fondo.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+  
+}
+.banner .active{
+    transform: translateY(-400px);
+}
+.banner h2{
+    color:  white;
+}
+#navigation{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    height: 100vh;
+    background: rgba(156, 28, 28, 0.288);
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+}
+#navigation.active{
+    right: 0;
+}
+#navigation ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.content {
+    max-width: 500px;
+    margin-left:500px;
+   
+}
+.content h2{
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    right: -400px;
+    font-size: 55px;
+}
+.content p{
+    color: white;
+    text-align:center;
+    font-size: 25px;
+}
+
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+
+footer {
+    text-align: center;
+    padding: 9px;
+    background-color:  rgba(223, 41, 41, 0.644);
+    color: black;  
+    border: 2px solid rgb(8, 8, 8);
+    font-size: 15x;
+ }
+

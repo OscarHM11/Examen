@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Parcial</title>
+</head>
+
+<body>
+
+<ul class="arriba">
+  <li><a href="http://127.0.0.1:5500/Parcial/index.html#">Inicio</a></li>
+  <li><a href="http://127.0.0.1:5500/Parcial/acerca/acerca.html">Acerca de</a></li>
+  <li><a href="http://127.0.0.1:5500/Parcial/contacto/contacto.html">Contacto</a></li>
+
+</ul>
+    <section class="banner" id="sec">
+        <header>
+           
+            <a  class="logo"><img src="content/image/Inicio.png" ></a>
+            <div id="toggle" onclick="toggle()"></div>            
+        </header>
+        
+        <div class="content">
+          
+            <h2>TECNO</h2>
+            <br><br><br>
+            <p>
+                Nosotros somos una empresa nacional la cual se encarga de realizar logos y publicidad para diferentes empresas
+                marcas o entidades que necesitas crecen exponencialmente en el mercado tecnologico.
+            </p>
+        
+           
+        </div>
+        
+            
+        </ul>
+        
+        
+    </section>
+    <nav id="navigation">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/Parcial/index.html#">Inicio</a></li>
+            <li><a href="http://127.0.0.1:5500/Parcial/acerca/acerca.html">Acerca de</a></li>
+            <li><a href="http://127.0.0.1:5500/Parcial/contacto/contacto.html">Contactenos</a></li>
+       
+        </ul>
+    </nav>
+<script type="text/javascript">
+    function toggle(){
+        var seccion = document.getElementById("sec")
+        var nav = document.getElementById("navigation")
+        seccion.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+</script>
+
+<footer>
+    <p>TECNO</p>    
+</footer>
+</body>
+</html>

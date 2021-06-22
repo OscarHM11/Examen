@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylea.css">
+    
+    <title>Acerca de</title>
+</head>
+
+<body>
+    <ul class="arriba">
+        <li><a href="http://127.0.0.1:5500/Parcial/index.html#">Inicio</a></li>
+        <li><a href="http://127.0.0.1:5500/Parcial/acerca/acerca.html">Acerca de</a></li>
+        <li><a href="http://127.0.0.1:5500/Parcial/contacto/contacto.html">Contacto</a></li>
+      
+      </ul>
+    <section class="banner" id="sec">
+    <a href="#modalq" id="show-modalq">¿Quien es usted?</a>
+    <aside id="modalq" class="modalq">
+        <div class="content-modalq">
+            
+                <a href="#" class="close-modalq">X</a>
+                <h2>¿Quien es usted?</h2>
+            
+            <article>
+                <form class="formulario"><br>
+                    <label for="fname">Descripción:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <br>
+                    <label for="lname">Pasatiempos:</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <input class= "botton" type="button" value="Enviar">
+                  </form>
+            </article>
+        </div>
+        <a href="#" class="btn-close-modalq"></a>
+    </aside>
+    <br></br>
+    
+    <a href="#modale" id="show-modale"> Educación</a>
+    <aside id="modale" class="modale">
+        <div class="content-modale">
+            
+                <a href="#" class="close-modale">X</a>
+                <h2>Educación</h2>
+            
+            <article>
+                <ul>
+                    <li><br><br><a href="https://www.masterstudies.com/Master-in-Front-end-Development/Spain/Harbour.Space-University/?pk_vid=1ff66cc783fe3dbd1624343068e7d1cd">Desarrollo WEB</a></li>
+                    <li><br><br><a href="https://www.masterstudies.com/Master-in-Defense-and-Security-Systems-Development/Sweden/The-Swedish-Defence-University-(SEDU)/?pk_vid=1ff66cc783fe3dbd1624343111e7d1cd">Ingenieria en sistemas</a></li>
+                    <li><br><br><a href="https://www.studyusa.com/en/schools/p/il096/university-of-illinois-at-chicago">Ciberseguridad</a></li>
+               
+                </ul>
+            </article>
+        </div>
+        <a href="#" class="btn-close-modale"></a>
+    </aside>
+
+
+    <a href="#modalc" id="show-modalc">Conocimiento</a>
+    <aside id="modalc" class="modalc">
+        <div class="content-modalc">
+            
+                <a href="#" class="close-modalc">X</a>
+                <h2>Conocimiento</h2>
+            
+            <article>
+                <ul class="exp">
+               <br><br><br>
+                        <li> <i class="glyphicon glyphicon-cloud"></i>  Tecnología blanda</li>
+                      
+                     
+                        <li><i class="glyphicon glyphicon-thumbs-up"></i>  Tecnología flexible</li>
+                     
+                     
+                        <li><i class="glyphicon glyphicon-user"></i>  Tecnología operacion</li>
+                    
+                     
+                        <li><i class="glyphicon glyphicon-remove"></i>  Tecnología limpia</li>
+                    </ul>
+                   
+            </article>
+        </div>
+        <a href="#" class="btn-close-modalc"></a>
+    </aside>
+
+    <a href="#modalx" id="show-modalx">Experiencia</a>
+    <aside id="modalx" class="modalx">
+        <div class="content-modalx">
+            
+                <a href="#" class="close-modalx">X</a>
+                <h2>Experiencia</h2>
+            
+            <article>
+                    <br><br><br>
+                             <h3 class="exp">Contamos con 10 años de experiencia en el mercado tecnologico,
+                                 hoy en día somos la empresa más grande en enseñar, desarrollar en el continente
+                                 americano,nos encargarmos de capacitar a personas jovenes, para que sea reelegidas
+                                 en diferentes esquemas tecnologicos.
+                             </h3>
+                         
+            </article>
+        </div>
+        <a href="#" class="btn-close-modalx"></a>
+    </aside>
+   
+        <header>
+           
+            <a  class="logo"><img src="content/image/Inicio.png" ><h2>TECNO</h2></a>
+            <div id="toggle" onclick="toggle()"></div>            
+        </header>
+        
+        <div class="content">
+          
+            
+            
+            
+           
+        </div>
+        
+            
+        </ul>
+        
+        
+    </section>
+    <nav id="navigation">
+        <ul>
+            <li><a href="http://127.0.0.1:5500/Parcial/index.html#">Inicio</a></li>
+            <li><a href="http://127.0.0.1:5500/Parcial/acerca/acerca.html">Acerca de</a></li>
+            <li><a href="http://127.0.0.1:5500/Parcial/contacto/contacto.html">Contactenos</a></li>
+       
+        </ul>
+    </nav>
+<script type="text/javascript">
+    function toggle(){
+        var seccion = document.getElementById("sec")
+        var nav = document.getElementById("navigation")
+        seccion.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+</script>
+
+<footer>
+    <p>TECNO</p>    
+</footer>
+</body>
+</html>
